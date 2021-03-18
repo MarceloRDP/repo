@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/Google-Noto-Emoji-Animals-Nature-22214-dog-face.ico" type="image/x-icon">
+    <title>Atividade HTML e CSS</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <!-- No titulo abaixo utilizei negrito e itálico como forma e como semântica, sendo que no HTML devemos utilizar
+        apenas tags semânticas pois o formato quem dá é o CSS. Utilizei o atalho Ctrl + Shift + p para envelopar as palavras.
+        Usei uma tag de marcador com estilização direta no HTML
+        Usei também a tag del para textos que não têm mais validade e ins para textos que foram incluídos posteriormente-->
+        <h1>TÍTULO DO SITE</em></h1>
+        <p><mark style="background-color: aliceblue;">Site</mark> de <b>Teste</b>
+         <strong>para</strong> <i>aprender</i> <em>HTML</em> <del>e CSS</del> <ins>e CSS</ins></p>
+    </header>
+
+    <aside id="aside1">
+        <ul>
+            <li>Buldogue</li>
+            <li>Labrador</li>
+            <li>Maltês</li>
+            <li>Rottweiller</li>
+            <li>Dalmata</li>
+        </ul>
+    </aside>
+
+    <aside id="aside2">
+        <picture>
+            <!-- Abaixo utilizo imagens diferentes para diferentes tamanhos de tela. OBS Importante: Os nomes dos arquivos nao podem
+            conter espacos. -->
+            <source media="(max-width: 1200px)" srcset="Imagens/Cachorrotranspmenor.png" type="image/png">
+                <!-- <source media srcset="Imagens/Imagem Cachorromenor.jpg" type="image/jpeg"> -->
+                <!-- <source media="(min-width: 1000px)" srcset="Imagens/Imagem Cachorro.jpg" type="image/jpeg"> -->
+                <img src="Imagens/ImagemCachorro.jpg" alt="Imagem de Cachorro">
+        </picture>
+    </aside>
+
+    <main>
+            <table widht= "300px" border="1px" ALIGN="center">
+                <tr>
+                    <td>
+                        NOME DO CLIENTE
+                    </td>
+                    <td>
+                        TIPO DO CACHORRO
+                    </td>
+                    <td>
+                        NOME DO CACHORRO
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        LETÍCIA
+                    </td>
+                    <td>
+                        BULDOGUE
+                    </td>
+                    <td>
+                        PRETO
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        JOÃO
+                    </td>
+                    <td>
+                        DALMATA
+                    </td>
+                    <td>
+                        PINTADO
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        FABIANO
+                    </td>
+                    <td>
+                        ROTTWEILLER
+                    </td>
+                    <td>
+                        DOGÃO
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        CARLA
+                    </td>
+                    <td>
+                        MALTÊS
+                    </td>
+                    <td>
+                        LILINHA
+                    </td>
+                </tr>
+
+        </table>
+    </main>
+
+    <footer>
+        <!-- Aqui eu utilizei a tag small usada para textos importantes escritos com letras menores -->
+        <p>Desenvolvedor: Marcelo <sup>nome</sup> Reis de Paula<sub>sobrenome</sub></p>
+        <p>&copy; <small>Todos os direitos reservados.</small></p>
+    </footer>
+</body>
+</html>
