@@ -67,6 +67,31 @@ footer {
 .ImgCachorro {
     display:flex;
     margin-left: auto;
-    margin-right: auto; /*
+    margin-right: auto;
+}
 
+#prim {
+text-align: center;
+}
+
+form label{
+    display: block;
+    font-weight: bold;
+    margin: 5px;
+}
+
+#div-form h2{
+    margin-bottom: 30px;
+}
+
+form input{
+    width: 50%;
+}
+
+form button{
+    margin-top: 20px;
+}
+
+form div{
+    margin: 20px;
 }

@@ -43,19 +43,23 @@
 
     <main>
             <table widht= "300px" border="1px" ALIGN="center">
-                <tr>
-                    <td>
-                        NOME DO CLIENTE
-                    </td>
-                    <td>
-                        TIPO DO CACHORRO
-                    </td>
-                    <td>
-                        NOME DO CACHORRO
-                    </td>
-                </tr>
-
-                <tr>
+                <thead>
+                    <tr>
+                        <td>
+                            NOME DO CLIENTE
+                        </td>
+                        <td>
+                            TIPO DO CACHORRO
+                        </td>
+                        <td>
+                            NOME DO CACHORRO
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+                <!-- <tr>
                     <td>
                         LETÍCIA
                     </td>
@@ -100,12 +104,24 @@
                     <td>
                         LILINHA
                     </td>
-                </tr>
+                </tr> -->
 
         </table>
-
-        <form action="">
-
+        <div id="prim">Cadastre-se</div>
+        <form method="POST" action="" onsubmit= "return enviarFormulario(this);">
+            <div>
+                <label>Nome do Cliente</label>
+                <input id="nomecliente" class="form-input" type="text" name="nomecliente" />
+            </div>
+            <div>
+                <label>Tipo do Cachorro</label>
+                <input id="tipocachorro" class="form-input" type="text" name="tipocachorro" />
+            </div>
+            <div>
+                <label>Nome do Cachorro</label>
+                <input id="nomecachorro" class="form-input" type="text" name="nomecachorro" />
+            </div>
+            <button>Cadastrar</button>
         </form>
     </main>
 <!-- Alteracao teste -->
